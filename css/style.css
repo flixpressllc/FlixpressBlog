@@ -2,7 +2,23 @@
 	color: #fff;
 	font-weight: 500;
 	font-size: 32px;
-	line-height: 24px;
+	line-height: 1;
 	padding: 20px;
 	text-align: center;
+}
+
+.flixpressBlog-LayoutsLayout-bodyContainer {
+	padding: 12px;
+	margin: auto;
+	max-width: 1170px;
+}
+
+.flixpressBlog-LayoutsLayout-rssLinkContainer {
+	float: right;
+}
+
+@media screen and (min-width: 768px) {
+	.flixpressBlog-LayoutsLayout-bodyContainer {
+		padding: 40px;
+	}
 }
