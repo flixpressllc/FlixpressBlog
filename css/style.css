@@ -105,6 +105,16 @@
 	*/
 
 	.flixpressBlog-LayoutsLayout-bodyContainer {
-		padding: 40px;
+		padding: 12px 40px;
+	}
+	
+	.flixpressBlog-LayoutsPost-postTitle {
+		font-size: 60px;
+	}
+
+	.flixpressBlog-LayoutsPost-postContent {
+		font-size: 18px;
+		max-width: 800px;
+		margin: auto;
 	}
 }
