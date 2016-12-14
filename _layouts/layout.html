@@ -4,13 +4,19 @@
 	<body>
 		{% include header.html %}
 		<div class="flixpressBlog-LayoutsLayout-bodyContainer">
-			<div class="flixpressBlog-LayoutsLayout-blogLinksContainer">
+
+			<nav class="flixpressBlog-LayoutsLayout-blogLinksContainer">
 				<a class="flixpressBlog-LayoutsLayout-rssLink" href="{{ site.baseurl }}/rss.xml"><img src="{{ site.baseurl }}/img/rss.png" /> feed</a>
 				<a class="flixpressBlog-LayoutsLayout-blogHomeLink" href="{{ site.baseurl }}/">Blog Home</a>
-			</div>
+				{% for page in site.pages %}{% if page.layout == "layout" %}{% if page.title != "Flixpress Blog" %}
+					<a class="flixpressBlog-LayoutsLayout-blogHomeLink" href="{{ site.baseurl }}/{{ page.url }}">{{ page.title }}</a>
+				{% endif %}{% endif %}{% endfor %}
+			</nav>
+
 			<div class="flixpressBlog-LayoutsLayout-contentContainer">
 				{{content}}
 			</div>
+
 		</div>
 	</body>
 </html>
