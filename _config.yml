@@ -1,2 +1,8 @@
 pretzel: 
     engine: liquid
+    
+baseurl: "" # evetually used with a different config file... I hope
+
+exclude:
+  - .git
+  - .gitignore
