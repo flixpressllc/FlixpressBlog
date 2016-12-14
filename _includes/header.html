@@ -41,3 +41,16 @@
 <div class="parallax_1">
   <h1 class="flixpressBlog-IncludesHeader-title">Flixpress Blog{% if page.layout == "layout" %}: {{ page.title }}{% endif %}</h3>
 </div>
+
+<nav class="flixpressBlog-IncludesHeader-blogLinks">
+  <div class="flixpressBlog-IncludesHeader-blogLinksWrapper">
+    <a class="flixpressBlog-IncludesHeader-rssLink" href="{{ site.baseurl }}/rss.xml">
+      <img src="{{ site.baseurl }}/img/rss.png" /> Feed
+    </a>
+    <a class="flixpressBlog-IncludesHeader-blogHomeLink" href="{{ site.baseurl }}/">Blog Home</a>
+    
+    {% for page in site.pages %}{% if page.layout == "layout" %}{% if page.title != "Flixpress Blog" %}
+    <a class="flixpressBlog-IncludesHeader-blogNavLink" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+    {% endif %}{% endif %}{% endfor %}
+  </div>
+</nav>

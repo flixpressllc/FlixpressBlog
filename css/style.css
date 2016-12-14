@@ -11,6 +11,50 @@
 	line-height: 1;
 	padding: 20px;
 	text-align: center;
+	margin-bottom: 0;
+}
+
+.flixpressBlog-IncludesHeader-blogLinks {
+	background: #b70000;
+}
+
+.flixpressBlog-IncludesHeader-blogLinksWrapper {
+	padding: 0 12px;
+	margin: auto;
+	max-width: 1170px;
+}
+
+.flixpressBlog-IncludesHeader-blogLinksWrapper > a {
+	color: #fff;
+	display: inline-block;
+	padding: 12px;
+}
+
+.flixpressBlog-IncludesHeader-blogLinksWrapper > a:hover {
+	background: #dd0000
+}
+
+.flixpressBlog-IncludesHeader-blogLinksWrapper::before,
+.flixpressBlog-IncludesHeader-blogLinksWrapper::after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.flixpressBlog-IncludesHeader-blogLinksWrapper::after {
+	clear: both;
+}
+
+.flixpressBlog-IncludesHeader-blogNavLink,
+.flixpressBlog-IncludesHeader-blogHomeLink,
+.flixpressBlog-IncludesHeader-rssLink {
+	font-size: 18px;
+	float: left;
+	margin-left: 1em;
+}
+.flixpressBlog-IncludesHeader-blogHomeLink {
+	margin-left: 0;
+}
+.flixpressBlog-IncludesHeader-rssLink {
+	float: right;
 }
 
 /*
@@ -25,29 +69,6 @@
 	padding: 12px;
 	margin: auto;
 	max-width: 1170px;
-}
-
-.flixpressBlog-LayoutsLayout-blogLinksContainer::before,
-.flixpressBlog-LayoutsLayout-blogLinksContainer::after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-.flixpressBlog-LayoutsLayout-blogLinksContainer::after {
-    clear: both;
-}
-
-.flixpressBlog-LayoutsLayout-blogNavLink,
-.flixpressBlog-LayoutsLayout-blogHomeLink,
-.flixpressBlog-LayoutsLayout-rssLink {
-	font-size: 18px;
-	float: left;
-	margin-left: 2em;
-}
-.flixpressBlog-LayoutsLayout-blogHomeLink {
-	margin-left: 0;
-}
-.flixpressBlog-LayoutsLayout-rssLink {
-	float: right;
 }
 
 
@@ -97,6 +118,22 @@
 */
 
 @media screen and (min-width: 768px) {
+	/*
+	====================================
+	      Media Query: min width 768
+	      Includes
+	====================================
+	*/
+
+	.flixpressBlog-IncludesHeader-blogLinksWrapper {
+		padding: 0 40px;
+	}
+	
+	.flixpressBlog-IncludesHeader-blogNavLink,
+	.flixpressBlog-IncludesHeader-rssLink {
+		margin-left: 2em;
+	}
+
 	/*
 	====================================
 	      Media Query: min width 768
