@@ -2,7 +2,6 @@
 layout : layout
 title : Flixpress Blog
 ---
-
 <ul class="posts">
     {% for post in site.posts | limit: 3 %}
 		<li>
@@ -21,9 +20,9 @@ title : Flixpress Blog
     {% endfor %}
 </ul>
 
-<h3>OLDER</h3>
+<h3>Older Posts</h3>
 <ul class="postArchive">
-{% for post in site.posts | offset: 3 %}
+{% for post in site.posts | offset: 3 | limit: 5 %}
 	<li>
 		<span class="olderpostdate"> {{ post.date | date: "%d %b"  }} </span> <a class="postlink" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 	</li>
