@@ -4,16 +4,18 @@ layout: layout
 
 <div class="flixpressBlog-LayoutsPost-post">
 	<h2 class="flixpressBlog-LayoutsPost-postTitle"> {{page.title}} </h2>
-	<span class="flixpressBlog-LayoutsPost-postDate">{{ page.date | date: "%e %B, %Y" }}</span>
-	{% if page.tags %}
-		<ul class="flixpressBlog-LayoutsPost-postTags">
-		{% for tag in page.tags %}
-			<li class="flixpressBlog-LayoutsPost-postTag">
-				<a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
-			</li>
-		{% endfor %}
-		</ul>
-	{% endif %}
+	<div class="flixpressBlog-LayoutsPost-postStats">
+		<span class="flixpressBlog-LayoutsPost-postDate">{{ page.date | date: "%e %B, %Y" }}</span>
+		{% if page.tags %}
+			<ul class="flixpressBlog-LayoutsPost-postTags">
+			{% for tag in page.tags %}
+				<li class="flixpressBlog-LayoutsPost-postTag">
+					<a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
+				</li>
+			{% endfor %}
+			</ul>
+		{% endif %}
+	</div>
 	
 	<div class="flixpressBlog-LayoutsPost-postContent">
 		{{ content }}

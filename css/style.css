@@ -53,6 +53,23 @@
 
 /* Layouts: Post */
 
+.flixpressBlog-LayoutsPost-postTitle {
+	text-align: center;
+}
+
+.flixpressBlog-LayoutsPost-postStats::before,
+.flixpressBlog-LayoutsPost-postStats::after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.flixpressBlog-LayoutsPost-postStats::after {
+    clear: both;
+}
+
+.flixpressBlog-LayoutsPost-postDate {
+	float: right;
+}
+
 .flixpressBlog-LayoutsPost-prevNext {
 	margin: 48px auto;
 }
