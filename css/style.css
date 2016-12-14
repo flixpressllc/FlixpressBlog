@@ -1,3 +1,9 @@
+/*
+====================================
+      Includes
+====================================
+*/
+
 .flixpressBlog-HeaderInclude-title {
 	color: #fff;
 	font-weight: 500;
@@ -7,18 +13,26 @@
 	text-align: center;
 }
 
+/*
+====================================
+      Layouts
+====================================
+*/
+
+/* Layouts: Layout */
+
 .flixpressBlog-LayoutsLayout-bodyContainer {
 	padding: 12px;
 	margin: auto;
 	max-width: 1170px;
 }
 
-.flixpressBlog-LayoutsLayout-blogLinksContainer:before,
-.flixpressBlog-LayoutsLayout-blogLinksContainer:after {
+.flixpressBlog-LayoutsLayout-blogLinksContainer::before,
+.flixpressBlog-LayoutsLayout-blogLinksContainer::after {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
-.flixpressBlog-LayoutsLayout-blogLinksContainer:after {
+.flixpressBlog-LayoutsLayout-blogLinksContainer::after {
     clear: both;
 }
 
@@ -30,7 +44,42 @@
 	float: left;
 }
 
+/* Layouts: Post */
+
+.flixpressBlog-LayoutsPost-prevNext {
+	margin: 48px auto;
+}
+.flixpressBlog-LayoutsPost-prevNext::before,
+.flixpressBlog-LayoutsPost-prevNext::after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.flixpressBlog-LayoutsPost-prevNext::after {
+    clear: both;
+}
+
+.flixpressBlog-LayoutsPost-prev {
+	float: left;
+}
+
+.flixpressBlog-LayoutsPost-next {
+	float: right;
+}
+
+/*
+====================================
+      Media Queries
+====================================
+*/
+
 @media screen and (min-width: 768px) {
+	/*
+	====================================
+	      Media Query: min width 768
+	      Layouts
+	====================================
+	*/
+
 	.flixpressBlog-LayoutsLayout-bodyContainer {
 		padding: 40px;
 	}

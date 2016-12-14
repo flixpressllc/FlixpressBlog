@@ -2,19 +2,37 @@
 layout: layout
 ---
 
-<div class="entry-container">
-	<div class='entry'>
-		<h1> {{page.title}} </h1>
-		<span class="postdate">{{ page.date | date: "%e %B, %Y"  }}
-			{% for tag in page.tags %}
-				<li><a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a></li>
-			{% endfor %}
-		</span>
+<div class="flixpressBlog-LayoutsPost-post">
+	<h2 class="flixpressBlog-LayoutsPost-postTitle"> {{page.title}} </h2>
+	<span class="flixpressBlog-LayoutsPost-postDate">{{ page.date | date: "%e %B, %Y" }}</span>
+	{% if page.tags %}
+		<ul class="flixpressBlog-LayoutsPost-postTags">
+		{% for tag in page.tags %}
+			<li class="flixpressBlog-LayoutsPost-postTag">
+				<a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
+			</li>
+		{% endfor %}
+		</ul>
+	{% endif %}
+	
+	<div class="flixpressBlog-LayoutsPost-postContent">
 		{{ content }}
 	</div>
 </div>
-<div id="page-navigation"> 
-	<div class="left"> {% if page.previous.url %} <a href="{{ site.baseurl }}{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&larr; {{page.previous.title}}</a> {% endif %} </div> 
-	<div class="right"> {% if page.next.url %} <a href="{{ site.baseurl }}{{page.next.url}}" title="next Post: {{page.next.title}}">{{page.next.title}} &rarr; </a> {% endif %} </div> 
-	<div class="clear">&nbsp;</div>
-</div> 
+
+<nav class="flixpressBlog-LayoutsPost-prevNext"> 
+	{% if page.previous.url %}
+		<a class="flixpressBlog-LayoutsPost-prev"
+		href="{{ site.baseurl }}{{page.previous.url}}"
+		title="Previous Post: {{page.previous.title}}">
+			&larr; {{page.previous.title}}
+		</a>
+	{% endif %}
+	{% if page.next.url %}
+		<a class="flixpressBlog-LayoutsPost-next"
+		href="{{ site.baseurl }}{{page.next.url}}"
+		title="next Post: {{page.next.title}}">
+			{{page.next.title}} &rarr;
+		</a>
+	{% endif %}
+</nav> 
