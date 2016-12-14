@@ -93,6 +93,7 @@
 
 .flixpressBlog-LayoutsPost-prevNext {
 	margin: 48px auto;
+	font-size: 18px;
 }
 .flixpressBlog-LayoutsPost-prevNext::before,
 .flixpressBlog-LayoutsPost-prevNext::after {
