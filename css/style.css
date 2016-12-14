@@ -36,13 +36,20 @@
     clear: both;
 }
 
+.flixpressBlog-LayoutsLayout-blogNavLink,
+.flixpressBlog-LayoutsLayout-blogHomeLink,
+.flixpressBlog-LayoutsLayout-rssLink {
+	font-size: 18px;
+	float: left;
+	margin-left: 2em;
+}
+.flixpressBlog-LayoutsLayout-blogHomeLink {
+	margin-left: 0;
+}
 .flixpressBlog-LayoutsLayout-rssLink {
 	float: right;
 }
 
-.flixpressBlog-LayoutsLayout-blogHomeLink {
-	float: left;
-}
 
 /* Layouts: Post */
 
