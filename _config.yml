@@ -6,7 +6,7 @@ pretzel:
 # to an incorrect location and break everything. (Comments in YAML are a pound sign,
 # at any point in the line. Anythign after is a comment.)
 
-baseurl: "/blog" # For production `pretzel bake`
+# baseurl: "/blog" # For production `pretzel bake`
 baseurl: "" # For development `pretzel taste`
 
 exclude:
