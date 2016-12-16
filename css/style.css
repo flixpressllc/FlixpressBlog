@@ -63,6 +63,12 @@
 ====================================
 */
 
+.flixpressBlog-IncludesArticle-postContent {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+/* Markdown generated HTML has no classes. Targeting those specifically here. */
 .flixpressBlog-IncludesArticle-postContent > p:not([class]),
 .flixpressBlog-IncludesArticle-postContent > h1:not([class]),
 .flixpressBlog-IncludesArticle-postContent > h2:not([class]),
@@ -70,7 +76,8 @@
 .flixpressBlog-IncludesArticle-postContent > h4:not([class]),
 .flixpressBlog-IncludesArticle-postContent > h5:not([class]) {
 	max-width: 800px;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .flixpressBlog-IncludesArticle-postStats::before,
@@ -85,6 +92,7 @@
 .flixpressBlog-IncludesArticle-postDate {
 	float: right;
 }
+
 /*
 ====================================
       Layouts: Layout
