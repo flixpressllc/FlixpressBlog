@@ -4,7 +4,7 @@ title: My Sixth Post
 author: "Author"
 ---
 
-## Hello world...
+## Hello world 6...
 
 ```cs
 static void Main() 
@@ -14,4 +14,4 @@ static void Main()
 ```
 
 
-This is my first post on the site!
+This is my sixth post on the site!
