@@ -99,7 +99,7 @@
 ====================================
 */
 
-.flixpressBlog-LayoutsLayout-bodyContainer {
+.flixpressBlog-LayoutsLayout-mainContentWrapper {
 	padding: 12px;
 	margin: auto;
 	max-width: 1170px;
@@ -171,7 +171,7 @@
 	====================================
 	*/
 
-	.flixpressBlog-LayoutsLayout-bodyContainer {
+	.flixpressBlog-LayoutsLayout-mainContentWrapper {
 		padding: 12px 40px;
 	}
 	
