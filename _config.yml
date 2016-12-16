@@ -1,7 +1,13 @@
 pretzel: 
     engine: liquid
-    
-baseurl: "" # evetually used with a different config file... I hope
+
+# Below are two different values for the `baseurl`. Comment OUT the second one
+# in order to generate this blog for production. Otherwise all links will point
+# to an incorrect location and break everything. (Comments in YAML are a pound sign,
+# at any point in the line. Anythign after is a comment.)
+
+baseurl: "/blog" # For production `pretzel bake`
+baseurl: "" # For development `pretzel taste`
 
 exclude:
   - .git
