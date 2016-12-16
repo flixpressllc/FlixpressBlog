@@ -36,7 +36,7 @@ and internationalization.
 
 If you are creating a video that really calls for some kind of narration, but you
 can't do it yourself, your only option used to be to hire someone to do it for you.
-Of course, there were always some [less-than-great][HAL TTS]
+Of course, there were always some [less-than-great][HAL]
 third party TTS options in the past. But even with a good quality voiceover sound,
 You would still have to create your video in one place, then create your narration
 in another place. Change one, and the other is wrong and vice versa.
@@ -44,8 +44,6 @@ in another place. Change one, and the other is wrong and vice versa.
 But since Flixpress now has a custom engine that works inside our templates, you
 can create great sounding voiceovers right inside your Flixpress project. They
 will naturally time out correctly, and are much easier to adjust.
-
-[HAL TTS]: https://youtu.be/rGix1Na_qhI?t=1m54s "2013 video of TTS software"
 
 ### Internationalization
 
@@ -61,7 +59,6 @@ to go find someone who knows Russian. Because [the internet knows Russian][russi
 So now you can create your videos and have the voiceover translated into other
 languages. How cool is that?
 
-[russian]: https://translate.google.com/#en/ru/What%20should%20I%20say%20to%20my%20new%20audience%3F "Google Translate: English to Russian"
 
 --------------------------------------------------------------------------------
 
@@ -74,4 +71,9 @@ a try if you are already qualified.
 If you want to know exactly how to use the new feature, we have an in-depth 
 [how-to article describing TTS][how-to] features of our templates.
 
+
+
+
 [how-to]: {{ site.baseurl }}{% post_url 2016-12-17-how-to-use-text-to-speech %}
+[HAL]: https://youtu.be/rGix1Na_qhI?t=1m54s "2013 video of TTS software"
+[russian]: https://translate.google.com/#en/ru/What%20should%20I%20say%20to%20my%20new%20audience%3F "Google Translate: English to Russian"
