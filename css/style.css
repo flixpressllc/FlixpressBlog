@@ -1,6 +1,6 @@
 /*
 ====================================
-      Includes
+      Includes: Header
 ====================================
 */
 
@@ -59,11 +59,37 @@
 
 /*
 ====================================
-      Layouts
+      Includes: Article
 ====================================
 */
 
-/* Layouts: Layout */
+.flixpressBlog-IncludesArticle-postContent > p:not([class]),
+.flixpressBlog-IncludesArticle-postContent > h1:not([class]),
+.flixpressBlog-IncludesArticle-postContent > h2:not([class]),
+.flixpressBlog-IncludesArticle-postContent > h3:not([class]),
+.flixpressBlog-IncludesArticle-postContent > h4:not([class]),
+.flixpressBlog-IncludesArticle-postContent > h5:not([class]) {
+	max-width: 800px;
+	margin: auto;
+}
+
+.flixpressBlog-IncludesArticle-postStats::before,
+.flixpressBlog-IncludesArticle-postStats::after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.flixpressBlog-IncludesArticle-postStats::after {
+	clear: both;
+}
+
+.flixpressBlog-IncludesArticle-postDate {
+	float: right;
+}
+/*
+====================================
+      Layouts: Layout
+====================================
+*/
 
 .flixpressBlog-LayoutsLayout-bodyContainer {
 	padding: 12px;
@@ -71,25 +97,16 @@
 	max-width: 1170px;
 }
 
-
-/* Layouts: Post */
+/*
+====================================
+      Layouts: Post
+====================================
+*/
 
 .flixpressBlog-LayoutsPost-postTitle {
 	text-align: center;
 }
 
-.flixpressBlog-LayoutsPost-postStats::before,
-.flixpressBlog-LayoutsPost-postStats::after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-.flixpressBlog-LayoutsPost-postStats::after {
-    clear: both;
-}
-
-.flixpressBlog-LayoutsPost-postDate {
-	float: right;
-}
 
 .flixpressBlog-LayoutsPost-prevNext {
 	margin: 48px auto;
@@ -152,11 +169,5 @@
 	
 	.flixpressBlog-LayoutsPost-postTitle {
 		font-size: 60px;
-	}
-
-	.flixpressBlog-LayoutsPost-postContent {
-		font-size: 18px;
-		max-width: 800px;
-		margin: auto;
 	}
 }

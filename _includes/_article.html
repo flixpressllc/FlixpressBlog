@@ -1,0 +1,25 @@
+{% comment %}
+  This page expects you to set a variable named `article` before you include.
+  That is the reason it is called `_article.html`. The underscore is a clue
+  that it is just a partial that needs some setup before calling.
+{% endcomment %}
+<div class="flixpressBlog-IncludesArticle-postStats">
+  <span class="flixpressBlog-IncludesArticle-postDate">{{ article.date | date: "%e %B, %Y" }}</span>
+  {% if article.tags %}
+    <ul class="flixpressBlog-IncludesArticle-postTags">
+    {% for tag in article.tags %}
+      <li class="flixpressBlog-IncludesArticle-postTag">
+        <a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+</div>
+
+<div class="flixpressBlog-IncludesArticle-postContent">
+  {% if article.content %}
+    {{ article.content }}
+  {% else %}
+    {{ content }}
+  {% endif %}
+</div>

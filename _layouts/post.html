@@ -2,25 +2,11 @@
 layout: layout
 ---
 
-<div class="flixpressBlog-LayoutsPost-post">
+<article class="flixpressBlog-LayoutsPost-post">
 	<h1 class="flixpressBlog-LayoutsPost-postTitle"> {{page.title}} </h1>
-	<div class="flixpressBlog-LayoutsPost-postStats">
-		<span class="flixpressBlog-LayoutsPost-postDate">{{ page.date | date: "%e %B, %Y" }}</span>
-		{% if page.tags %}
-			<ul class="flixpressBlog-LayoutsPost-postTags">
-			{% for tag in page.tags %}
-				<li class="flixpressBlog-LayoutsPost-postTag">
-					<a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
-				</li>
-			{% endfor %}
-			</ul>
-		{% endif %}
-	</div>
-	
-	<div class="flixpressBlog-LayoutsPost-postContent">
-		{{ content }}
-	</div>
-</div>
+	{% assign article = page %}
+	{% include _article.html %}
+</article>
 
 <nav class="flixpressBlog-LayoutsPost-prevNext"> 
 	{% if page.previous.url %}
