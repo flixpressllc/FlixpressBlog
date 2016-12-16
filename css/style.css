@@ -80,6 +80,11 @@
 	margin-right: auto;
 }
 
+.flixpressBlog-IncludesArticle-postContent > .video {
+	max-width: 700px;
+	margin: 24px auto;
+}
+
 .flixpressBlog-IncludesArticle-postStats::before,
 .flixpressBlog-IncludesArticle-postStats::after {
 	content: " "; /* 1 */

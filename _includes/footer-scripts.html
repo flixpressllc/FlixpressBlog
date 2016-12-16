@@ -1,1 +1,15 @@
 <script type="text/javascript" src="{{ site.baseurl }}/js/stickyHeader.js"></script>
+<script type="text/javascript" src="https://flixpress.com/Scripts/jquery.fitvids.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    (function applyFitVidsThenWrapWithVideoClassDiv() {
+      $('.flixpressBlog-LayoutsLayout-mainContentWrapper').fitVids();
+      
+      // Add .video wrapper if embeds don't have one
+      $('.fluid-width-video-wrapper').filter(function(){
+        return ! $(this).parent().hasClass('video');
+      }).wrap('<div class="video"></div>');
+    })();
+  });
+</script>
