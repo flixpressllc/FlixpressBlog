@@ -74,10 +74,15 @@
 .flixpressBlog-IncludesArticle-postContent > h2:not([class]),
 .flixpressBlog-IncludesArticle-postContent > h3:not([class]),
 .flixpressBlog-IncludesArticle-postContent > h4:not([class]),
-.flixpressBlog-IncludesArticle-postContent > h5:not([class]) {
+.flixpressBlog-IncludesArticle-postContent > h5:not([class]),
+.flixpressBlog-IncludesArticle-postContent > blockquote:not([class]) {
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.flixpressBlog-IncludesArticle-postContent > blockquote:not([class]) {
+	color: #adadad;
 }
 
 .flixpressBlog-IncludesArticle-postContent > .video {
