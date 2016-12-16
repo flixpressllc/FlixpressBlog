@@ -18,8 +18,11 @@
 
 <div class="flixpressBlog-IncludesArticle-postContent">
   {% if article.content %}
-    {{ article.content }}
+    {% assign the_content = article.content %}
   {% else %}
-    {{ content }}
+    {% assign the_content = content %}
   {% endif %}
+  
+  {{ the_content | replace: "---", "&mdash;" }}
+  
 </div>
