@@ -90,6 +90,17 @@
 	margin: 24px auto;
 }
 
+
+/*
+	double bad for the selector and the !important. Once styles from the main
+	site no longer have to be referenced, this can go away.
+*/
+.flixpressBlog-IncludesArticle-postContent a:link,
+.flixpressBlog-IncludesArticle-postContent a:visited,
+.flixpressBlog-IncludesArticle-postContent a {
+	text-decoration: underline !important;
+}
+
 .flixpressBlog-IncludesArticle-postStats::before,
 .flixpressBlog-IncludesArticle-postStats::after {
 	content: " "; /* 1 */
