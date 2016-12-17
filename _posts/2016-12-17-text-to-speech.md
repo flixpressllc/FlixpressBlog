@@ -7,6 +7,13 @@ short_description: "TTS has arrived! Have your video narrated at no extra charge
 
 > Know what TTS is already? View our [how-to article on TTS inside Flixpress Templates][how-to].
 
+<div class="helpers-CaptionedImage helpers-Right">
+  <img src="https://www.research.ibm.com/beijing/images/crl/text2speech.gif" />
+  <div class="helpers-CaptionedImage-caption">
+    The promise of TTS from days gone by, as depicted by <a href="https://www.research.ibm.com/beijing/updates/text2speech.html">an old IBM page</a>. (I hope it's old, anyhow.)
+  </div>
+</div>
+
 Text to speech has come a long way in the last several years. With Apple's Siri,
 Amazon's Alexa, Microsoft's Cortana, and Google Now, many people have gotten used
 to having quick verbal exchanges with their computers and devices. There is a lot
