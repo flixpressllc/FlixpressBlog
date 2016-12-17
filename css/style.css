@@ -66,6 +66,8 @@
 .flixpressBlog-IncludesArticle-postContent {
 	font-size: 18px;
 	font-weight: 300;
+	max-width: 900px;
+	margin: auto;
 }
 
 /* Markdown generated HTML has no classes. Targeting those specifically here. */
@@ -87,9 +89,18 @@
 
 .flixpressBlog-IncludesArticle-postContent > .video {
 	max-width: 700px;
-	margin: 24px auto;
+	margin: 0 auto;
+	padding: 24px 0;
 }
 
+.flixpressBlog-IncludesArticle-postContent > .video::before,
+.flixpressBlog-IncludesArticle-postContent > .video::after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.flixpressBlog-IncludesArticle-postContent > .video::after {
+	clear: both;
+}
 
 /*
 	double bad for the selector and the !important. Once styles from the main

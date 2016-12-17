@@ -1,0 +1,58 @@
+/*
+  These are the only styles that apply to the whole blog, not just one file.
+  Tread lightly.
+*/
+
+.helpers-CaptionedImage {
+  background-color: #f5f5f5;
+  padding: 4px;
+  max-width: 800px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-top-color: #eee;
+  border-left-color: #eee;
+  border-bottom: none;
+  display: table;
+  flex-direction: column;
+}
+
+.helpers-CaptionedImage img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.helpers-CaptionedImage-caption {
+  background-color: #f5f5f5;
+  font-size: 0.75em;
+  text-align: center;
+  display: table-caption;
+  caption-side: bottom;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-left-color: #eee;
+}
+
+.helpers-Clearfix::before,
+.helpers-Clearfix::after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.helpers-Clearfix::after {
+	clear: both;
+}
+
+@media screen and (min-width: 550px) {
+  .helpers-CaptionedImage.helpers-Left {
+    float: left;
+    max-width: 40%;
+    margin: 0;
+    margin-right: 10px;
+  }
+  .helpers-CaptionedImage.helpers-Right {
+    float: right;
+    max-width: 40%;
+    margin: 0;
+    margin-left: 10px;
+  }
+}
