@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: "New Feature: Text To Speech"
 author: "Don Denton"
@@ -72,14 +72,14 @@ languages. How cool is that?
 --------------------------------------------------------------------------------
 
 Text To Speech is slowly being added to many templates at Flixpress. If you'd like
-to try it out, choose the template I've used above. It's already available there.
+to try it out, choose [the template I've used above][temp31]. It's already available there.
 
 If you want to know exactly how to use the new feature, we have a
 [how-to article describing TTS][how-to] features of our templates.
 
 
 
-
+[temp31]: https://flixpress.com/AutomatedTemplates.aspx?tid=31
 [how-to]: {{ site.baseurl }}{% post_url 2016-12-17-how-to-use-text-to-speech %}
 [HAL]: https://youtu.be/rGix1Na_qhI?t=1m54s "2013 video of TTS software"
 [russian]: https://translate.google.com/#en/ru/What%20would%20you%20like%20me%20to%20say%3F "Google Translate: English to Russian"
