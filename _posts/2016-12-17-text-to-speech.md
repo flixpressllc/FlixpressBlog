@@ -3,6 +3,7 @@ layout: post
 title: "New Feature: Text To Speech"
 author: "Don Denton"
 short_description: "TTS has arrived! Have your video narrated at no extra charge."
+categories: [feature]
 ---
 
 > Know what TTS is already? View our [how-to article on TTS inside Flixpress Templates][how-to].
@@ -69,13 +70,10 @@ languages. How cool is that?
 
 --------------------------------------------------------------------------------
 
-**TODO: fact check below**
+Text To Speech is slowly being added to many templates at Flixpress. If you'd like
+to try it out, choose the template I've used above. It's already available there.
 
-Text To Speech is available to all Personal Subscribers and above, so [upgrade
-your account](https://flixpress.com/upgrade.aspx) if you need to or just give it
-a try if you are already qualified.
-
-If you want to know exactly how to use the new feature, we have an in-depth 
+If you want to know exactly how to use the new feature, we have a
 [how-to article describing TTS][how-to] features of our templates.
 
 
