@@ -4,12 +4,17 @@ title : Flixpress Blog
 ---
 <div class="flixpressBlog-Index-posts">
     {% for post in site.posts | limit: 4 %}
+      {% if post.short_description %}
+        {% assign short_description = post.short_description %}
+      {% else %}
+        {% assign short_description = post.content | strip_html | truncate_words: 12 %}
+      {% endif %}
       <article class="flixpressBlog-Index-postMediaItem">
         <h2 class="flixpressBlog-Index-postTitle"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
         <div class="flixpressBlog-Index-postDescription">
-          {{ post.short_description }}
+          {{ short_description }}
           <a class="flixpressBlog-Index-postReadMore"
-            href="{{ post.url }}">Read more...</a>
+            href="{{ post.url }}">Read more</a>
         </div>
         {% if post.featured_image %}
           <div class="flixpressBlog-Index-postFeaturedImage">
