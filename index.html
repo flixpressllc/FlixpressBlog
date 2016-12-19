@@ -23,6 +23,23 @@ title : Flixpress Blog
         {% endif %}
       </article>
     {% endfor %}
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.flixpressBlog-Index-postMediaItem')
+          .css('cursor', 'pointer')
+          .hover(function () {
+            $(this).addClass('hovered');
+          }, function () {
+            $(this).removeClass('hovered');
+          })
+          .on('click', function () {
+            var url = $(this).find('a').first().attr('href');
+            document.location.href = url;
+          });
+      });
+    </script>
+
 </div>
 
 <h3>Older Posts</h3>

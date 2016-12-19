@@ -203,6 +203,16 @@
   flex-basis: 100%;
   padding: 0.5em;
   margin-bottom: 3em;
+  border: 1px solid transparent;
+}
+
+.flixpressBlog-Index-postMediaItem.hovered {
+  /*
+    Only adding this class via javascript on purpose. It needs to be this way so
+    that the element will gracefully degrade to a non-clickable item.
+  */
+  background: #f7f7f7;
+  border-color: #eee;
 }
 
 .flixpressBlog-Index-postTitle {
