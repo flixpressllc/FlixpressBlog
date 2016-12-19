@@ -2,8 +2,11 @@
 layout : layout
 title : Flixpress Blog
 ---
+
+{% assign num_posts = site.num_featured_posts | size %}
+
 <div class="flixpressBlog-Index-posts">
-    {% for post in site.posts | limit: 4 %}
+    {% for post in site.posts | limit: num_posts %}
       {% if post.short_description %}
         {% assign short_description = post.short_description %}
       {% else %}
@@ -44,7 +47,7 @@ title : Flixpress Blog
 
 <h3>Older Posts</h3>
 <ul class="flixpressBlog-Index-postArchive">
-{% for post in site.posts | offset: 4 | limit: 5 %}
+{% for post in site.posts | offset: num_posts | limit: 5 %}
   <li>
     <span class="flixpressBlog-Index-archivePostDate"> {{ post.date | date: "%d %b"  }} </span> <a class="flixpressBlog-Index-archivePostLink" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
   </li>

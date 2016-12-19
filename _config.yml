@@ -1,13 +1,19 @@
-pretzel: 
+pretzel:
     engine: liquid
 
 # Below are two different values for the `baseurl`. Comment OUT the second one
 # in order to generate this blog for production. Otherwise all links will point
 # to an incorrect location and break everything. (Comments in YAML are a pound sign,
-# at any point in the line. Anythign after is a comment.)
+# at any point in the line. Anything after is a comment.)
 
 # baseurl: "/blog" # For production `pretzel bake`
 baseurl: "" # For development `pretzel taste`
+
+# hack to get around the fact that this liquid engine won't assign a variable
+# as a proper number. So I am just using the number of characters to determine
+# the number I actually want. `abcd` is 4 chracters long, so the num_featured_posts
+# will be dtermined as 4.
+num_featured_posts: abcd
 
 exclude:
   - .git
