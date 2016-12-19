@@ -5,56 +5,56 @@
 */
 
 .flixpressBlog-IncludesHeader-title {
-	color: #fff;
-	font-weight: 500;
-	font-size: 32px;
-	line-height: 1;
-	padding: 20px;
-	text-align: center;
-	margin-bottom: 0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .flixpressBlog-IncludesHeader-blogLinks {
-	background: #b70000;
+  background: #b70000;
 }
 
 .flixpressBlog-IncludesHeader-blogLinksWrapper {
-	padding: 0 12px;
-	margin: auto;
-	max-width: 1170px;
+  padding: 0 12px;
+  margin: auto;
+  max-width: 1170px;
 }
 
 .flixpressBlog-IncludesHeader-blogLinksWrapper > a {
-	color: #fff;
-	display: inline-block;
-	padding: 12px;
+  color: #fff;
+  display: inline-block;
+  padding: 12px;
 }
 
 .flixpressBlog-IncludesHeader-blogLinksWrapper > a:hover {
-	background: #dd0000
+  background: #dd0000
 }
 
 .flixpressBlog-IncludesHeader-blogLinksWrapper::before,
 .flixpressBlog-IncludesHeader-blogLinksWrapper::after {
-	content: " "; /* 1 */
-	display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 .flixpressBlog-IncludesHeader-blogLinksWrapper::after {
-	clear: both;
+  clear: both;
 }
 
 .flixpressBlog-IncludesHeader-blogNavLink,
 .flixpressBlog-IncludesHeader-blogHomeLink,
 .flixpressBlog-IncludesHeader-rssLink {
-	font-size: 18px;
-	float: left;
-	margin-left: 1em;
+  font-size: 18px;
+  float: left;
+  margin-left: 1em;
 }
 .flixpressBlog-IncludesHeader-blogHomeLink {
-	margin-left: 0;
+  margin-left: 0;
 }
 .flixpressBlog-IncludesHeader-rssLink {
-	float: right;
+  float: right;
 }
 
 /*
@@ -64,18 +64,18 @@
 */
 
 .flixpressBlog-IncludesArticle-postContent {
-	font-size: 18px;
-	font-weight: 300;
-	margin: auto;
+  font-size: 18px;
+  font-weight: 300;
+  margin: auto;
 }
 
 .flixpressBlog-IncludesArticle-postContent::before,
 .flixpressBlog-IncludesArticle-postContent::after {
-	content: " "; /* 1 */
-	display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 .flixpressBlog-IncludesArticle-postContent::after {
-	clear: both;
+  clear: both;
 }
 
 /* Markdown generated HTML has no classes. Targeting those specifically here. */
@@ -86,54 +86,54 @@
 .flixpressBlog-IncludesArticle-postContent > h4:not([class]),
 .flixpressBlog-IncludesArticle-postContent > h5:not([class]),
 .flixpressBlog-IncludesArticle-postContent > blockquote:not([class]) {
-	margin-left: auto;
-	margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flixpressBlog-IncludesArticle-postContent > blockquote:not([class]) {
-	color: #adadad;
+  color: #adadad;
 }
 
 .flixpressBlog-IncludesArticle-postContent > hr:not([class]) {
-	margin: 40px auto;
+  margin: 40px auto;
 }
 
 .flixpressBlog-IncludesArticle-postContent > .video {
-	max-width: 700px;
-	margin: 0;
-	padding: 24px 0;
+  max-width: 700px;
+  margin: 0;
+  padding: 24px 0;
 }
 
 .flixpressBlog-IncludesArticle-postContent > .video::before,
 .flixpressBlog-IncludesArticle-postContent > .video::after {
-	content: " "; /* 1 */
-	display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 .flixpressBlog-IncludesArticle-postContent > .video::after {
-	clear: both;
+  clear: both;
 }
 
 /*
-	double bad for the selector and the !important. Once styles from the main
-	site no longer have to be referenced, this can go away.
+  double bad for the selector and the !important. Once styles from the main
+  site no longer have to be referenced, this can go away.
 */
 .flixpressBlog-IncludesArticle-postContent a:link,
 .flixpressBlog-IncludesArticle-postContent a:visited,
 .flixpressBlog-IncludesArticle-postContent a {
-	text-decoration: underline !important;
+  text-decoration: underline !important;
 }
 
 .flixpressBlog-IncludesArticle-postStats::before,
 .flixpressBlog-IncludesArticle-postStats::after {
-	content: " "; /* 1 */
-	display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 .flixpressBlog-IncludesArticle-postStats::after {
-	clear: both;
+  clear: both;
 }
 
 .flixpressBlog-IncludesArticle-postDate {
-	float: right;
+  float: right;
 }
 
 /*
@@ -143,14 +143,14 @@
 */
 
 .flixpressBlog-LayoutsLayout-mainContentWrapper {
-	padding: 12px;
-	margin: auto;
-	max-width: 1170px;
+  padding: 12px;
+  margin: auto;
+  max-width: 1170px;
 }
 
 .flixpressBlog-LayoutsLayout-contentContainer {
-	max-width: 800px;
-	margin: auto;
+  max-width: 800px;
+  margin: auto;
 }
 
 /*
@@ -160,14 +160,14 @@
 */
 
 .flixpressBlog-LayoutsPost-postTitle {
-	text-align: left;
-	margin: 60px auto 30px;
+  text-align: left;
+  margin: 60px auto 30px;
 }
 
 
 .flixpressBlog-LayoutsPost-prevNext {
-	margin: 48px auto;
-	font-size: 18px;
+  margin: 48px auto;
+  font-size: 18px;
 }
 .flixpressBlog-LayoutsPost-prevNext::before,
 .flixpressBlog-LayoutsPost-prevNext::after {
@@ -179,11 +179,11 @@
 }
 
 .flixpressBlog-LayoutsPost-prev {
-	float: left;
+  float: left;
 }
 
 .flixpressBlog-LayoutsPost-next {
-	float: right;
+  float: right;
 }
 
 
@@ -194,30 +194,30 @@
 */
 
 .flixpressBlog-Index-posts {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .flixpressBlog-Index-postMediaItem {
-	flex-basis: 100%;
-	padding: 0.5em;
-	margin-bottom: 3em;
+  flex-basis: 100%;
+  padding: 0.5em;
+  margin-bottom: 3em;
 }
 
 .flixpressBlog-Index-postTitle {
-	font-size: 24px;
-	margin: 0 auto 6px;
+  font-size: 24px;
+  margin: 0 auto 6px;
 }
 
 .flixpressBlog-Index-postFeaturedImage {
-	/* again, battling flixpress.com set styles */
-	max-width: 200px !important;
+  /* again, battling flixpress.com set styles */
+  max-width: 200px !important;
 }
 
 .flixpressBlog-Index-postReadMore {
-	text-decoration: underline !important;
-	display: block;
+  text-decoration: underline !important;
+  display: block;
 }
 
 /*
@@ -229,72 +229,75 @@
 ================================================================================
 ================================================================================
 */
+
 @media screen and (min-width: 500px) {
-	.flixpressBlog-Index-postMediaItem {
-		flex-basis: 49%;
-	}
+  .flixpressBlog-Index-postMediaItem {
+    flex-basis: 49%;
+  }
 }
+
+
 @media screen and (min-width: 768px) {
-	/*
-	====================================
-	      Media Query: min width 768
-	      Includes
-	====================================
-	*/
+  /*
+  ====================================
+        Media Query: min width 768
+        Includes
+  ====================================
+  */
 
-	.flixpressBlog-IncludesHeader-blogLinksWrapper {
-		padding: 0 40px;
-	}
-	
-	.flixpressBlog-IncludesHeader-blogNavLink,
-	.flixpressBlog-IncludesHeader-rssLink {
-		margin-left: 2em;
-	}
+  .flixpressBlog-IncludesHeader-blogLinksWrapper {
+    padding: 0 40px;
+  }
 
-	/*
-	====================================
-	      Media Query: min width 768
-	      Layouts
-	====================================
-	*/
+  .flixpressBlog-IncludesHeader-blogNavLink,
+  .flixpressBlog-IncludesHeader-rssLink {
+    margin-left: 2em;
+  }
 
-	.flixpressBlog-LayoutsLayout-mainContentWrapper {
-		padding: 12px 40px;
-	}
-	
-	.flixpressBlog-LayoutsPost-postTitle {
-		font-size: 42px;
-	}
-	
-	/*
-	====================================
-	      Media Query: min width 768
-	      Regular Pages
-	====================================
-	*/
-	
-	.flixpressBlog-Index-postMediaItem {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-content: flex-start;
-	}
-	
-	.flixpressBlog-Index-postTitle {
-		font-size: 28px;
-		margin-bottom: 20px;
-		flex-basis: 100%;
-	}
-	
-	.flixpressBlog-Index-postFeaturedImage {
-		flex-basis: 49%;
-	}
-	
-	.flixpressBlog-Index-postDescription {
-		font-size: 18px;
-		font-weight: 200;
-		order: 1;
-		flex-basis: 49%;
-	}
+  /*
+  ====================================
+        Media Query: min width 768
+        Layouts
+  ====================================
+  */
+
+  .flixpressBlog-LayoutsLayout-mainContentWrapper {
+    padding: 12px 40px;
+  }
+
+  .flixpressBlog-LayoutsPost-postTitle {
+    font-size: 42px;
+  }
+
+  /*
+  ====================================
+        Media Query: min width 768
+        Regular Pages
+  ====================================
+  */
+
+  .flixpressBlog-Index-postMediaItem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .flixpressBlog-Index-postTitle {
+    font-size: 28px;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+  }
+
+  .flixpressBlog-Index-postFeaturedImage {
+    flex-basis: 49%;
+  }
+
+  .flixpressBlog-Index-postDescription {
+    font-size: 18px;
+    font-weight: 200;
+    order: 1;
+    flex-basis: 49%;
+  }
 
 }

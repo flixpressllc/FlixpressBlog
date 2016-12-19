@@ -3,24 +3,24 @@ layout: layout
 ---
 
 <article class="flixpressBlog-LayoutsPost-post">
-	<h1 class="flixpressBlog-LayoutsPost-postTitle"> {{page.title}} </h1>
-	{% assign article = page %}
-	{% include _article.html %}
+  <h1 class="flixpressBlog-LayoutsPost-postTitle"> {{page.title}} </h1>
+  {% assign article = page %}
+  {% include _article.html %}
 </article>
 
-<nav class="flixpressBlog-LayoutsPost-prevNext"> 
-	{% if page.previous.url %}
-		<a class="flixpressBlog-LayoutsPost-prev"
-		href="{{ site.baseurl }}{{page.previous.url}}"
-		title="Previous Post: {{page.previous.title}}">
-			&larr; {{page.previous.title}}
-		</a>
-	{% endif %}
-	{% if page.next.url %}
-		<a class="flixpressBlog-LayoutsPost-next"
-		href="{{ site.baseurl }}{{page.next.url}}"
-		title="next Post: {{page.next.title}}">
-			{{page.next.title}} &rarr;
-		</a>
-	{% endif %}
-</nav> 
+<nav class="flixpressBlog-LayoutsPost-prevNext">
+  {% if page.previous.url %}
+    <a class="flixpressBlog-LayoutsPost-prev"
+    href="{{ site.baseurl }}{{page.previous.url}}"
+    title="Previous Post: {{page.previous.title}}">
+      &larr; {{page.previous.title}}
+    </a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="flixpressBlog-LayoutsPost-next"
+    href="{{ site.baseurl }}{{page.next.url}}"
+    title="next Post: {{page.next.title}}">
+      {{page.next.title}} &rarr;
+    </a>
+  {% endif %}
+</nav>

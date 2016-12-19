@@ -6,9 +6,9 @@ permalink: /archive/
 
 <ul class="postArchive">
 {% for post in site.posts %}
-	<li>
-		<span class="olderpostdate"> {{ post.date | date: "%B %d, %Y"  }} </span>
+  <li>
+    <span class="olderpostdate"> {{ post.date | date: "%B %d, %Y"  }} </span>
     <a class="postlink" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-	</li>
+  </li>
 {% endfor %}
 </ul>

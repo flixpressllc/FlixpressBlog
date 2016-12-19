@@ -16,14 +16,14 @@ layout: nil
     <priority>1.00</priority>
   </url>
   {% endfor %}
-  
+
   {% for page in site.pages %}
-	{% if page.url %}
-	<url>
-		<loc>http://domain{{ page.url }}</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.00</priority>
-	</url>
-	{% endif %}
+  {% if page.url %}
+  <url>
+    <loc>http://domain{{ page.url }}</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
+  </url>
+  {% endif %}
   {% endfor %}
 </urlset>

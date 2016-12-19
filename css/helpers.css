@@ -35,11 +35,11 @@
 
 .helpers-Clearfix::before,
 .helpers-Clearfix::after {
-	content: " "; /* 1 */
-	display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 .helpers-Clearfix::after {
-	clear: both;
+  clear: both;
 }
 
 @media screen and (min-width: 550px) {
