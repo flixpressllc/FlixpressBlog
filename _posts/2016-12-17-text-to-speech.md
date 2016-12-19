@@ -27,7 +27,7 @@ was first announed and today is pretty astounding. Here at Flixpress, we have
 benefitted greatly from these improvements. Here is a taste of what is available
 now at Flixpress:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-qQzL3dVUC4" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-yfGevuAfkY/?rel=0" frameborder="0" allowfullscreen></iframe>
 
 That was one of our templates---one that has been out for a while---showing off
 a brand new feature of Flixpress.com: **Text To Speech**.
@@ -58,7 +58,7 @@ I don't speak a second language but my boss (and CEO of Flixpress) does. I asked
 him if he would give me a translation of the video I made above, so I could just
 plop in the Russian:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IA6kGxXBnfQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tcgUntIpiV8/?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Pretty nice. The best part is that all I needed was the text. I didn't even need
 to go find someone who knows Russian. Because [the internet knows Russian][russian].
@@ -83,4 +83,4 @@ If you want to know exactly how to use the new feature, we have an in-depth
 
 [how-to]: {{ site.baseurl }}{% post_url 2016-12-17-how-to-use-text-to-speech %}
 [HAL]: https://youtu.be/rGix1Na_qhI?t=1m54s "2013 video of TTS software"
-[russian]: https://translate.google.com/#en/ru/What%20should%20I%20say%20to%20my%20new%20audience%3F "Google Translate: English to Russian"
+[russian]: https://translate.google.com/#en/ru/What%20would%20you%20like%20me%20to%20say%3F "Google Translate: English to Russian"
