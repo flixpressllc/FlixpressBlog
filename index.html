@@ -3,18 +3,26 @@ layout : layout
 title : Flixpress Blog
 ---
 <div class="flixpressBlog-Index-posts">
-    {% for post in site.posts | limit: 3 %}
-  		<article>
-				<h2 class="flixpressBlog-Index-postTitle"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-        {% assign article = post %}
-      	{% include _article.html %}
+    {% for post in site.posts | limit: 4 %}
+  		<article class="flixpressBlog-Index-postMediaItem">
+        <h2 class="flixpressBlog-Index-postTitle"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        <div class="flixpressBlog-Index-postDescription">
+          {{ post.short_description }}
+          <a class="flixpressBlog-Index-postReadMore"
+            href="{{ post.url }}">Read more...</a>
+        </div>
+        {% if post.featured_image %}
+          <div class="flixpressBlog-Index-postFeaturedImage">
+            <img src="{% include featured_image %}" />
+          </div>
+        {% endif %}
   		</article>
     {% endfor %}
 </div>
 
 <h3>Older Posts</h3>
 <ul class="flixpressBlog-Index-postArchive">
-{% for post in site.posts | offset: 3 | limit: 5 %}
+{% for post in site.posts | offset: 4 | limit: 5 %}
 	<li>
 		<span class="flixpressBlog-Index-archivePostDate"> {{ post.date | date: "%d %b"  }} </span> <a class="flixpressBlog-Index-archivePostLink" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 	</li>

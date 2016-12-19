@@ -193,12 +193,31 @@
 ====================================
 */
 
-.flixpressBlog-Index-postTitle {
-	margin: 80px auto 20px;
+.flixpressBlog-Index-posts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
-.flixpressBlog-Index-postTitle a {
+.flixpressBlog-Index-postMediaItem {
+	flex-basis: 100%;
+	padding: 0.5em;
+	margin-bottom: 3em;
+}
+
+.flixpressBlog-Index-postTitle {
+	font-size: 24px;
+	margin: 0 auto 6px;
+}
+
+.flixpressBlog-Index-postFeaturedImage {
+	/* again, battling flixpress.com set styles */
+	max-width: 200px !important;
+}
+
+.flixpressBlog-Index-postReadMore {
 	text-decoration: underline !important;
+	display: block;
 }
 
 /*
@@ -210,7 +229,11 @@
 ================================================================================
 ================================================================================
 */
-
+@media screen and (min-width: 500px) {
+	.flixpressBlog-Index-postMediaItem {
+		flex-basis: 49%;
+	}
+}
 @media screen and (min-width: 768px) {
 	/*
 	====================================
@@ -249,10 +272,29 @@
 	      Regular Pages
 	====================================
 	*/
-
-	.flixpressBlog-Index-postTitle {
-		font-size: 42px;
+	
+	.flixpressBlog-Index-postMediaItem {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: flex-start;
 	}
 	
+	.flixpressBlog-Index-postTitle {
+		font-size: 28px;
+		margin-bottom: 20px;
+		flex-basis: 100%;
+	}
+	
+	.flixpressBlog-Index-postFeaturedImage {
+		flex-basis: 49%;
+	}
+	
+	.flixpressBlog-Index-postDescription {
+		font-size: 18px;
+		font-weight: 200;
+		order: 1;
+		flex-basis: 49%;
+	}
 
 }

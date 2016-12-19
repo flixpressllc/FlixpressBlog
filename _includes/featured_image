@@ -1,0 +1,48 @@
+{% comment %}
+This file will create a url to the article's featured_image. Be sure that the
+page or post you are using actually has one before calling this file.
+
+Images with two slashes (`//`) in the url will not be modified.
+
+Images beginning with a single slash will root themselves in the root directory
+of this blog.
+
+Images without a single beginning slash will root themselves in
+<blog root>/img/<year of article>/<month of article>/
+
+This file must NOT have any printing spaces or an extra carriage return at the end.
+
+{% endcomment %}{% capture this_whole_file %}
+
+
+{% comment %}
+
+The bit below does its best to determine if we are on a page or on a post. Includes
+in Pretzel do not allow variables to be specifically passed in, so we have to guess
+what our variable names might be. Pretty hacky... but sustainable for a little while.
+
+{% endcomment %}
+
+{% if post %}
+  {% assign article = post %}
+{% else %}
+  {% assign article = page %}
+{% endif %}
+
+
+{% capture first %}{{ article.featured_image | truncate: 1, '' }}{% endcapture %}
+
+{% if article.featured_image contains '//' %}
+  {% comment %} Print the image url without modification {% endcomment %}
+  {{ article.featured_image }}
+  
+{% elsif first == '/' %}
+  {% comment %} Print the image url with baseurl {% endcomment %}
+  {{ site.baseurl }}{{ article.featured_image }}
+  
+{% else %}
+  {{ site.baseurl }}/img/{{ article.date | date: "%Y/%m/" }}{{ article.featured_image }}
+  
+{% endif %}
+
+{% endcapture %}{{ this_whole_file | replace: " ", "" | strip_newlines }}
