@@ -66,8 +66,16 @@
 .flixpressBlog-IncludesArticle-postContent {
 	font-size: 18px;
 	font-weight: 300;
-	max-width: 900px;
 	margin: auto;
+}
+
+.flixpressBlog-IncludesArticle-postContent::before,
+.flixpressBlog-IncludesArticle-postContent::after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.flixpressBlog-IncludesArticle-postContent::after {
+	clear: both;
 }
 
 /* Markdown generated HTML has no classes. Targeting those specifically here. */
@@ -78,7 +86,6 @@
 .flixpressBlog-IncludesArticle-postContent > h4:not([class]),
 .flixpressBlog-IncludesArticle-postContent > h5:not([class]),
 .flixpressBlog-IncludesArticle-postContent > blockquote:not([class]) {
-	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -87,9 +94,13 @@
 	color: #adadad;
 }
 
+.flixpressBlog-IncludesArticle-postContent > hr:not([class]) {
+	margin: 40px auto;
+}
+
 .flixpressBlog-IncludesArticle-postContent > .video {
 	max-width: 700px;
-	margin: 0 auto;
+	margin: 0;
 	padding: 24px 0;
 }
 
@@ -137,6 +148,11 @@
 	max-width: 1170px;
 }
 
+.flixpressBlog-LayoutsLayout-contentContainer {
+	max-width: 800px;
+	margin: auto;
+}
+
 /*
 ====================================
       Layouts: Post
@@ -144,7 +160,8 @@
 */
 
 .flixpressBlog-LayoutsPost-postTitle {
-	text-align: center;
+	text-align: left;
+	margin: 60px auto 30px;
 }
 
 
@@ -167,6 +184,21 @@
 
 .flixpressBlog-LayoutsPost-next {
 	float: right;
+}
+
+
+/*
+====================================
+      Regular Pages: Index
+====================================
+*/
+
+.flixpressBlog-Index-postTitle {
+	margin: 80px auto 20px;
+}
+
+.flixpressBlog-Index-postTitle a {
+	text-decoration: underline !important;
 }
 
 /*
@@ -208,6 +240,19 @@
 	}
 	
 	.flixpressBlog-LayoutsPost-postTitle {
-		font-size: 60px;
+		font-size: 42px;
 	}
+	
+	/*
+	====================================
+	      Media Query: min width 768
+	      Regular Pages
+	====================================
+	*/
+
+	.flixpressBlog-Index-postTitle {
+		font-size: 42px;
+	}
+	
+
 }
