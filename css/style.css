@@ -16,6 +16,7 @@
 
 .flixpressBlog-IncludesHeader-blogLinks {
   background: #b70000;
+  text-align: center;
 }
 
 .flixpressBlog-IncludesHeader-blogLinksWrapper {
@@ -47,14 +48,6 @@
 .flixpressBlog-IncludesHeader-blogHomeLink,
 .flixpressBlog-IncludesHeader-rssLink {
   font-size: 18px;
-  float: left;
-  margin-left: 1em;
-}
-.flixpressBlog-IncludesHeader-blogHomeLink {
-  margin-left: 0;
-}
-.flixpressBlog-IncludesHeader-rssLink {
-  float: right;
 }
 
 /*
@@ -257,11 +250,6 @@
 
   .flixpressBlog-IncludesHeader-blogLinksWrapper {
     padding: 0 40px;
-  }
-
-  .flixpressBlog-IncludesHeader-blogNavLink,
-  .flixpressBlog-IncludesHeader-rssLink {
-    margin-left: 2em;
   }
 
   /*
