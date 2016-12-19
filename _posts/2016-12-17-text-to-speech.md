@@ -4,6 +4,7 @@ title: "New Feature: Text To Speech"
 author: "Don Denton"
 short_description: "TTS has arrived! Have your video narrated at no extra charge."
 categories: [feature]
+featured_image: text-to-speech.jpg
 ---
 
 > Know what TTS is already? View our [how-to article on TTS inside Flixpress Templates][how-to].
