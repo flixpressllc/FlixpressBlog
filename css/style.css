@@ -297,6 +297,10 @@
     flex-grow: 0.3;
   }
 
+  .flixpressBlog-layout-post .flixpressBlog-LayoutsLayout-sidebarSectionName:first-child {
+    margin-top: 60px;
+  }
+
   /*
   ====================================
         Media Query: min width 768
