@@ -16,7 +16,7 @@
         <h3 class="flixpressBlog-LayoutsLayout-sidebarSectionName">Recent Posts</h3>
         <ul class="flixpressBlog-LayoutsLayout-postArchive">
           {% for post in site.posts | limit: num_posts %}
-            <li>
+            <li class="flixpressBlog-LayoutsLayout-postArchiveItem">
               <span class="flixpressBlog-LayoutsLayout-archivePostDate"> {{ post.date | date: "%b %d, %Y" }} </span>
               <a class="flixpressBlog-LayoutsLayout-archivePostLink" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
             </li>

@@ -150,7 +150,12 @@
 }
 
 .flixpressBlog-LayoutsLayout-postArchive {
-  margin-bottom: 32px
+  margin-bottom: 32px;
+  padding-left: 1em;
+}
+
+.flixpressBlog-LayoutsLayout-postArchiveItem {
+  list-style: none;
 }
 
 /*
