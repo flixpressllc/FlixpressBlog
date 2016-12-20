@@ -2,7 +2,7 @@
 layout: post
 title: "How-To: Flixpress Text To Speech"
 author: "Don Denton"
-short_description: "TTS is a great feature for your videos. Here is how to use it."
+short_description: "TTS provides free narration for your videos. Here is how to use it."
 tags: [how-to]
 ---
 
