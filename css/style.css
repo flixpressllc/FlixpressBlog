@@ -305,21 +305,28 @@
 
   .flixpressBlog-Index-postFeaturedImage {
     flex-basis: 49%;
+    margin-right: 2%;
+  }
+
+  .flixpressBlog-Index-postDescription {
+    order: 1;
+    flex-basis: 49%;
+    flex-grow: 1;
+  }
+
+}
+@media screen and (min-width: 1170px) {
+  .flixpressBlog-LayoutsLayout-sidebar {
+    background: transparent;
   }
 
   .flixpressBlog-Index-postDescription {
     font-size: 18px;
     font-weight: 200;
-    order: 1;
-    flex-basis: 49%;
   }
-
 }
 @media screen and (min-width: 1250px) {
   .flixpressBlog-LayoutsLayout-contentContainer {
     margin: 0;
-  }
-  .flixpressBlog-LayoutsLayout-sidebar {
-    background: transparent;
   }
 }
