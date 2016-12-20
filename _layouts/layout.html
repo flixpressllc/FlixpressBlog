@@ -13,6 +13,16 @@
 
         {% assign num_posts = site.num_featured_posts | size %}
 
+        <h3 class="flixpressBlog-LayoutsLayout-sidebarSectionName">Recent Posts</h3>
+        <ul class="flixpressBlog-LayoutsLayout-postArchive">
+          {% for post in site.posts | limit: num_posts %}
+            <li>
+              <span class="flixpressBlog-LayoutsLayout-archivePostDate"> {{ post.date | date: "%b %d, %Y" }} </span>
+              <a class="flixpressBlog-LayoutsLayout-archivePostLink" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+
         <h3 class="flixpressBlog-LayoutsLayout-sidebarSectionName">Older Posts</h3>
         <ul class="flixpressBlog-LayoutsLayout-postArchive">
           {% for post in site.posts | offset: num_posts | limit: 10 %}

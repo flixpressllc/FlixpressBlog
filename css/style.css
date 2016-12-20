@@ -136,13 +136,21 @@
 */
 
 .flixpressBlog-LayoutsLayout-contentContainer {
-  padding: 12px;
   max-width: 800px;
   margin: 0;
 }
 
-.flixpressBlog-LayoutsLayout-sidebar {
-  padding: 12px;
+.flixpressBlog-LayoutsLayout-sidebar,
+.flixpressBlog-LayoutsLayout-contentContainer {
+  padding: 24px 12px 12px;
+}
+
+.flixpressBlog-LayoutsLayout-sidebarSectionName {
+  margin-top: 0;
+}
+
+.flixpressBlog-LayoutsLayout-postArchive {
+  margin-bottom: 32px
 }
 
 /*
@@ -193,7 +201,7 @@
 
 .flixpressBlog-Index-postMediaItem {
   flex-basis: 100%;
-  padding: 0.5em;
+  padding: 0 0.5em;
   margin-bottom: 3em;
   border: 1px solid transparent;
 }
@@ -273,7 +281,7 @@
 
   .flixpressBlog-LayoutsLayout-contentContainer {
     flex-grow: 1;
-    margin: auto;
+    margin: 0 auto;
   }
 
   .flixpressBlog-LayoutsLayout-sidebar {
@@ -315,9 +323,16 @@
   }
 
 }
+
+
 @media screen and (min-width: 1170px) {
   .flixpressBlog-LayoutsLayout-sidebar {
     background: transparent;
+  }
+
+  .flixpressBlog-LayoutsLayout-sidebar,
+  .flixpressBlog-LayoutsLayout-contentContainer {
+    padding-top: 48px;
   }
 
   .flixpressBlog-Index-postDescription {
