@@ -135,15 +135,14 @@
 ====================================
 */
 
-.flixpressBlog-LayoutsLayout-mainContentWrapper {
+.flixpressBlog-LayoutsLayout-contentContainer {
   padding: 12px;
-  margin: auto;
-  max-width: 1170px;
+  max-width: 800px;
+  margin: 0;
 }
 
-.flixpressBlog-LayoutsLayout-contentContainer {
-  max-width: 800px;
-  margin: auto;
+.flixpressBlog-LayoutsLayout-sidebar {
+  padding: 12px;
 }
 
 /*
@@ -259,12 +258,29 @@
   ====================================
   */
 
-  .flixpressBlog-LayoutsLayout-mainContentWrapper {
-    padding: 12px 40px;
-  }
-
   .flixpressBlog-LayoutsPost-postTitle {
     font-size: 42px;
+  }
+
+  .flixpressBlog-LayoutsLayout-mainContentWrapper {
+    position: relative;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  .flixpressBlog-LayoutsLayout-contentContainer {
+    flex-grow: 1;
+    margin: auto;
+  }
+
+  .flixpressBlog-LayoutsLayout-sidebar {
+    background: #f7f7f7;
+    flex-basis: 250px;
+    flex-shrink: 0;
+    flex-grow: 0.3;
   }
 
   /*
@@ -298,4 +314,12 @@
     flex-basis: 49%;
   }
 
+}
+@media screen and (min-width: 1250px) {
+  .flixpressBlog-LayoutsLayout-contentContainer {
+    margin: 0;
+  }
+  .flixpressBlog-LayoutsLayout-sidebar {
+    background: transparent;
+  }
 }

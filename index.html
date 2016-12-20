@@ -44,12 +44,3 @@ title : Flixpress Blog
     </script>
 
 </div>
-
-<h3>Older Posts</h3>
-<ul class="flixpressBlog-Index-postArchive">
-{% for post in site.posts | offset: num_posts | limit: 5 %}
-  <li>
-    <span class="flixpressBlog-Index-archivePostDate"> {{ post.date | date: "%d %b"  }} </span> <a class="flixpressBlog-Index-archivePostLink" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-  </li>
-{% endfor %}
-</ul>
