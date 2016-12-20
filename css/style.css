@@ -95,6 +95,7 @@
   max-width: 700px;
   margin: 0;
   padding: 24px 0;
+  clear: both;
 }
 
 .flixpressBlog-IncludesArticle-postContent > .video::before,
