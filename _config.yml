@@ -9,7 +9,7 @@ pretzel:
 # baseurl: "/blog" # For production `pretzel bake`
 baseurl: "" # For development `pretzel taste`
 
-# hack to get around the fact that this liquid engine won't assign a variable
+# hack to get around the fact that *this* liquid engine won't assign a variable
 # as a proper number. So I am just using the number of characters to determine
 # the number I actually want. `abcd` is 4 chracters long, so the num_featured_posts
 # will be dtermined as 4.
